@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como Jugar Ajedrez</title>
+    <!-- asiganción de estilos metodo 2 -->
+    <style>
+      body {
+        background-color: rgb(49, 16, 181);
+      }
+      h1 {
+        color: black;
+      }
+      nav {
+        color: blue;
+      }
+      input {
+        background-color: gray;
+      }
+      .resaltar {
+        background-color: darkgray;
+      }
+    </style>
+    <!-- asignacion de estilo metodo 3 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- navbar barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Acerca del Ajedrez</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Anécdotas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Jugar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Nivel_Inicial</a></li>
+                <li><a class="dropdown-item" href="#">Nivel_Avanzado</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="container pt-6">Acerca del Ajedrez</h1>
+
+    <p title="Breve comentario">
+      En esta página ustede podrá conocer todo acerca del ajedrez y jugar con
+      personas de todo el mundo.
+    </p>
+
+    <h2>Anécdotas</h2>
+    <p class="resaltar" style="text-decoration: solid">
+      Rona Petrosian acompañaba siempre a su esposo, el famoso Tigran Petrosian,
+      a cuanto torneo podía<br />, y no titubeaba en intervenir en su defensa
+      cuando lo consideraba necesario.<br />
+      En 1971, cuando el Gran Maestro soviético
+      <b
+        >fue eliminado por Robert<i> “Bobby” Fischer</i> en el torneo de
+        candidatos</b
+      >, en Buenos Aires,<br />
+      Rona cruzó la habitación de juego y le arreó una sonora cachetada a Alexei
+      Suetin, entrenador de su marido.
+    </p>
+    <h2
+      style="font-family: 'Times New Roman', Times, serif; font-size: xx-large"
+    >
+      História del Ajedrez
+    </h2>
+
+    <a href="https://ajedrez.pro/origen"> Acceda al link</a>
+
+    <br />
+    <br />
+    <hr />
+    <img
+      src="Imágenes/ajedrez.jpg"
+      alt="Tablero de ajedrez"
+      class="img-thumbnail"
+      class="img-fluid"
+      width="1880px"
+      height="580px"
+    />
+    <!-- Contenedor de Tabla -->
+    <div>
+      <h2>Tabla de Aperturas de juego</h2>
+
+      <table border="3" style="width: auto; height: auto">
+        <caption>
+          Aperturas más usadas
+        </caption>
+        <tr>
+          <th>Estilo</th>
+          <th colspan="2">Descripcion</th>
+        </tr>
+
+        <tr>
+          <td>Moderna</td>
+          <td><button>Detalle</button></td>
+          <td><button>Variantes</button></td>
+        </tr>
+        <tr>
+          <td>Catalana</td>
+          <td><button>Detalle</button></td>
+          <td><button>Variantes</button></td>
+        </tr>
+        <tr>
+          <td>Atípica</td>
+          <td><button>Detalle</button></td>
+          <td><button>Variantes</button></td>
+        </tr>
+        <tr>
+          <td>De los Tres Caballos</td>
+          <td>Detalle</td>
+          <td>Variantes</td>
+        </tr>
+        <tr>
+          <td>Defensa Italiana</td>
+          <td>Detalle</td>
+          <td>Variantes</td>
+        </tr>
+        <tr>
+          <td>Defensa Caro-Khan</td>
+          <td>Detalle</td>
+          <td>Variantes</td>
+        </tr>
+        <tr>
+          <td>Defensa Vienesa</td>
+          <td>Detalle</td>
+          <td>Variantes</td>
+        </tr>
+        <tr>
+          <td>Defensa Escosesa</td>
+          <td>Detalle</td>
+          <td>Variantes</td>
+        </tr>
+        <tr>
+          <td>Defensa Francesa</td>
+          <td>Detalle</td>
+          <td>Variantes</td>
+        </tr>
+      </table>
+    </div>
+    <h3>Como son las reglas del ajedrez</h3>
+
+    <div class="alert alert-primary" role="alert">Registrate ahora!</div>
+    <!-- Carousel de bootstrap -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="Imágenes/jugador de ajedrez.jfif"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="Imágenes/jugadores2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="Imágenes/jugadores3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- formulario -->
+    <form>
+      <fieldset>
+        <legend>Datos del jugador</legend>
+        <br />
+
+        <label for:"NOMBRE" >Nombres:</label> <br />
+        <div class="form-floating">
+          <input
+            type="text"
+            name="nombre"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="text"
+            style="background-color: grey"
+          /><br />
+        </div>
+        Apellido: <br />
+        <input type="text" name="apellido" placeholder="escribir un apellido"/>
+        <br />
+        <br>
+
+        Sobrenombre: <br />
+
+        <input type="text" name="seudonimo" /><br /><br />
+
+        <label type="text" name ="fecha_nac"> Facha de Nacimiento</label><br>
+        
+        <input type="date" name="fecha_nacdate" id = "fecha_nacdate" aria-current="time" min="1978-07-06" max= "2024-12-01">
+        <br>
+        <br>
+        Indique su categoría:<br>
+        <select name="categoría">
+          <option value="initial">Nivel_Inicial</option>
+          <option value="intermedy">Nivel_Intermedio</option>
+          <option value="advance">Nivel_Avanzado</option>
+        </select><br>
+        <br>
+
+        Comente brevemente como aprendión a jugar ajedrez:<br>
+        <textarea
+        <br />
+        <input type="submit" style="color: rgb(87, 30, 210)" />
+      </fieldset>
+    </form>
+
+    <form>
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label"
+          >Password</label
+        >
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" />
+        </div>
+      </div>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Niveles</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios1"
+              value="option1"
+              checked
+            />
+            <label class="form-check-label" for="gridRadios1">
+              Nivel Inicial
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios2"
+              value="option2"
+            />
+            <label class="form-check-label" for="gridRadios2">
+              Nivel Intermedio
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios3"
+              value="option3"
+            />
+            <label class="form-check-label" for="gridRadios3">
+              Nivel avanzado
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1" />
+            <label class="form-check-label" for="gridCheck1">
+              Varios juegos a la vez
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
+    <!-- Footer -->
+    <div class="card">
+      <div class="card-header">Featured</div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">
+          With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <script>
+      src = "js1/bootstrap.min.js";
+    </script>
+  </body>
+</html>
