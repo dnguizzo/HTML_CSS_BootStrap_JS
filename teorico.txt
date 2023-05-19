@@ -1,0 +1,117 @@
+1-Explicar y diagramar la arquitectura “Cliente-Servidor”:
+	En este modelo el cliente es la parte de la aplicacion que solicita servicios o recursos al servidor. El cliente puede ser una aplicacion
+	de software, un navegador web o incluso un dispositivo fisico como un telefono movil. El cliente envia peticiones al servidor y espera
+	respuestas.
+	El servidor es la parte de la aplicacion que procesa las peticiones del cliente y envia las respuestas correspondientes. El servidor puede ser una 
+	computadora dedicada o in conjunto de computadores que estan diseñadas para atender las solicitudes de los clientes.
+	El modelo se basa en una comunicacion de red, donde los clientes envian solicitudes al servidor a traves de algun protocolo de comunicacion
+	como HTTP, TCP/IP, FTP, entre otros.
+	+------------------------+                   +------------------------+
+|       Cliente          |                   |       Servidor         |
+|                        |                   |                        |
+|  +------------------+  |                   |  +------------------+  |
+|  |  Navegador/Web   |  |                   |  |   Base de Datos   |  |
+|  |   Aplicación     |  |                   |  |   Aplicación     |  |
+|  |   Móvil          |  |    Comunicación   |  |   Servicio API   |  |
+|  +------------------+  |  <---------------> |  +------------------+  |
+|                        |                   |                        |
++------------------------+                   +------------------------+
+	
+
+2. ¿Qué es un evento javascript? Nombre algún ejemplo y desarrolle como implementarlo.
+	un evento es una respuesta de la aplicacion a lo que el usuario hizo, puede ser click en un boton, o mover el mouse, etc.
+	podemos programar un evento para el click muestre un alert
+	$(document).ready(function(){
+	colsole.log("ready!);
+	$("buttonAceptar").click(function(){
+	alert("mensajeAdvertencia");
+	})})
+	
+	
+3. ¿Cómo escribiría el estilo necesario para aplicarlo a un selector con id= ”contenedor”, que tenga un color de fondo azul, el texto este centrado y tenga un tamaño de fuente de 12 píxeles.
+#contenedor{
+background-color: blue;
+text-align: center;
+font-size: 12px;
+}
+
+
+4. Encuentre el error y corrija:
+
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <tr>9</tr>
+        <tr>8</tr>
+    </tr>
+</table>
+estaban invertidos los td, tr. el td va dentro del tr
+
+
+5. ¿Cómo escribiría un documento que tenga 3 botones de opción (radio button) de los cuales el usuario solo pueda seleccionar solo uno?
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Botones de opción</title>
+</head>
+<body>
+  <form>
+    <input type="radio" name="opcion" id="opcion1" value="opcion1">
+    <label for="opcion1">Opción 1</label><br>
+    <input type="radio" name="opcion" id="opcion2" value="opcion2">
+    <label for="opcion2">Opción 2</label><br>
+    <input type="radio" name="opcion" id="opcion3" value="opcion3">
+    <label for="opcion3">Opción 3</label><br>
+  </form>
+</body>
+</html>
+
+1er Parcial Teórico – Tema 2
+1. Describir cuál es la estructura de una página web (etiquetas). Explicar para que
+sirve cada una.
+La estructura es:
+<!DOCTYPE html>
+<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+		</body>
+</html>
+
+2. Escribir script que utilizaría para obtener el value de un tag html por id.
+let nombre = document.getElementById("nombreDelId");
+
+
+3. Escribir etiqueta html para un botón, asignarle un evento para cuando se le
+presiona un click, escribir script para el evento click donde imprima en consola
+un texto cualquiera.
+<button type="button" onclick="escribir()";>
+
+function escribir(){
+alert("texto cualquiera")}
+
+4. Si a un párrafo se le setea un mismo estilo por medio de su clase, luego por su id
+y finalmente se le aplica dicho estilo dentro de dicha etiqueta html (“in-line”).
+¿Qué estilo predomina finalmente?
+Predomina el estilo de su propia etiqueta, luego el del id y por ultimo el de la clase.
+
+
+5. ¿Cuáles son los puntos de quiebre que propone Bootstrap? ¿Para qué son
+utilizados?
+los puntos de quiebre son utilizados para programar el comportamiento del tamaño deacuerdo al tamaño
+o pixeles de la pantalla donde se presenta.
+extra small : xs
+small: sm
+medium: md
+large: lg
+extra large: xl
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      Contenido del Div
+    </div>
+significa q en pantallas extra pequeñas se usara 12, etc.

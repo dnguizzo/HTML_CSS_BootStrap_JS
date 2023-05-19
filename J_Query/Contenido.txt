@@ -1,0 +1,7 @@
+Form con lbl, input, radio, select, textarea.
+Validaciones js.
+desde el principal llamamos a otra clase donde estan las validaciones:
+    <script src="./validaciones.js"></script>
+este script va antes de cerrar el body
+
+funciones jQuery
